@@ -15,11 +15,10 @@ void main() async {
 
   /// Initialisation from the oficial documentation: https://supabase.com/docs/reference/dart/initializing#flutter-initialize
   await Supabase.initialize(
-      url: "https://hwxntjagnnerabdlkggm.supabase.co",
-      anonKey:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMjgxNTgyMSwiZXhwIjoxOTQ4MzkxODIxfQ.LzRgtDAPvINq3nzKqoUAYiGEWxKVvFeOTpv_eJeUteg",
-      debug: true // optional
-      );
+    url: "",
+    anonKey: "",
+    debug: true, // optional
+  );
 
   BlocOverrides.runZoned(
     () => runApp(BlocInitialiser(child: AppRoot())),
