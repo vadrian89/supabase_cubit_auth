@@ -13,7 +13,7 @@ class Validators {
   );
 
   /// Validate that the provided value is a valid e-mail.
-  static bool isValidEmail(String? email) => (email != null) && _emailRegExp.hasMatch(email);
+  static bool isValidEmail([String? email]) => (email != null) && _emailRegExp.hasMatch(email);
 
   /// Validate that the provided value is a valid password.
   ///
@@ -24,6 +24,6 @@ class Validators {
   /// - should contain at least one lowercase;
   /// - should contain at least one special character;
   /// - should contain at least one digit;
-  static bool isValidPassword(String? password) =>
+  static bool isValidPassword([String? password]) =>
       (password != null) && _passwordRegExp.hasMatch(password);
 }
