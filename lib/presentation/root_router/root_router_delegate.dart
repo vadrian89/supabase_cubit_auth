@@ -77,11 +77,11 @@ class RootRouterDelegate extends RouterDelegate<RootRouterState> with ChangeNoti
   ///
   /// The confirmation dialog should return `false` to confirm and `true` to cancel.
   @override
-  Future<bool> popRoute() async {
+  Future<bool> popRoute() {
     if (_routerCubit.popRoute(_popResult)) {
-      return true;
+      return Future.value(true);
     }
-    return await _confirmAppExit();
+    return _confirmAppExit();
   }
 
   /// List of extra pages 1 level above stack.

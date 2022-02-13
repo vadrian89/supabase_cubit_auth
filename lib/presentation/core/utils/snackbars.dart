@@ -8,7 +8,7 @@ void showErrorSnackBar(BuildContext context, {required String message}) => showS
       backgroundColor: Colors.red,
     );
 
-/// Show when an operation is successful to the users using a pre-defined [SnackBar].
+/// Show an operation is successful to the users using a pre-defined [SnackBar].
 void showSuccessSnackBar(BuildContext context, {required String message}) => showStandardSnackBar(
       context,
       message: message,

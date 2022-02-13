@@ -12,17 +12,17 @@ class RootRouterParser extends RouteInformationParser<RootRouterState> {
   @override
   Future<RootRouterState> parseRouteInformation(RouteInformation routeInformation) {
     final uri = Uri.parse(routeInformation.location ?? "");
-    if (uri.pathSegments.isEmpty) {
-      return SynchronousFuture(const RootRouterState.initial());
-    } else {
+    RootRouterState state = const RootRouterState.initial();
+    if (uri.pathSegments.isNotEmpty) {
       if (uri.pathSegments.length == 1) {
-        return SynchronousFuture(RootRouterState.fromUriLevel1(uri));
+        state = RootRouterState.fromUriLevel1(uri);
       }
       if (uri.pathSegments.length == 2) {
-        return SynchronousFuture(RootRouterState.fromUriLevel2(uri));
+        state = RootRouterState.fromUriLevel2(uri);
       }
-      return SynchronousFuture(const RootRouterState.unknown());
+      state = const RootRouterState.unknown();
     }
+    return SynchronousFuture(state);
   }
 
   /// Restore the route information from the given configuration (or state, in our case).
