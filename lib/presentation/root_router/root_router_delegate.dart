@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:supabase_cubit_auth/application/root_router/root_router_cubit.dart';
-import 'package:supabase_cubit_auth/presentation/authentication/register_screen.dart';
-import 'package:supabase_cubit_auth/presentation/authentication/sign_in_screen.dart';
+import 'package:supabase_cubit_auth/presentation/authentication/register/register_screen.dart';
+import 'package:supabase_cubit_auth/presentation/authentication/sign_in/sign_in_screen.dart';
 import 'package:supabase_cubit_auth/presentation/core/screens/main_screen.dart';
 import 'package:supabase_cubit_auth/presentation/core/utils/app_exit_dialog.dart';
 import 'package:supabase_cubit_auth/presentation/home/logged_in_screen.dart';

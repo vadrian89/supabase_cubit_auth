@@ -5,8 +5,8 @@ import 'package:supabase_cubit_auth/domain/authentication/authentication_reposit
 import 'package:supabase_cubit_auth/infrastructure/validators.dart';
 import 'package:supabase_cubit_auth/presentation/core/utils/snackbars.dart';
 
-import 'core/auth_form_button.dart';
-import 'core/auth_form_field.dart';
+import '../core/auth_form_button.dart';
+import '../core/auth_form_field.dart';
 
 /// The user sign in screen of the app where the user can sign in using e-mail & password.
 ///

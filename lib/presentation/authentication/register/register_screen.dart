@@ -7,7 +7,7 @@ import 'package:supabase_cubit_auth/infrastructure/validators.dart';
 import 'package:supabase_cubit_auth/presentation/authentication/core/auth_form_button.dart';
 import 'package:supabase_cubit_auth/presentation/core/utils/snackbars.dart';
 
-import 'core/auth_form_field.dart';
+import '../core/auth_form_field.dart';
 
 /// The user registration screen of the app.
 ///
